@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Barbearia alura</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+
+        <header>
+            <h1 class="main-title">Barbearia Alura</h1>
+        </header>
+
+        <img id="banner" src="banner.jpg"/>
+
+        <div class="principal">
+            <h2 class="centralized-title">Sobre a Barbearia Alura</h2>
+
+            <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.
+            </p>
+
+            <p id="paragrafo"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+
+            <p>"Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+        </div>
+        
+        <div class="beneficios">
+            <h3 class="centralized-title">Benefícios</h3>
+            
+            <ul>
+                <li class="itens">Atendimento aos clientes</li>
+                <li class="itens">Espaço diferenciado</li>
+                <li class="itens">Localização</li>
+                <li class="itens">Profissionais Qualificados</li>
+            </ul>
+    
+            <img class="imagembeneficios" src="beneficios.jpg" />
+            
+        </div>
+        
+    </body>
+</html>
+<!--
+    Barbearia alura primeiro projeto do curso de html e css, criando a primeira página
+
+    foi aprendido durante esse curso
+
+    - tags -- etiquetas para mostrar e fazer diferentes tipos de efeitos, importancias, e diferenciação
+
+    - !DOCTYPE html - tag para dizer qual é a versão do html que estamos usando
+
+    - <html></html> - tag html para mostrar tudo que está na página html e armazenar dentro dela
+
+    - head - tag para armazenar as configurações, instruções de como o navegador deve se comportar dentro da página que usa ela
+
+    - body - tag para armazenar todo o conteúdo da página que irá ser mostrado consequentemente, somente as tags que vão aparecer na tela
+
+    - meta charset="UTF-8" - uma tag para cuidar das acentuações de varios dicionarios do mundo inteiro, é a tag padrão que abrange
+    o padrão de escrita mundial, e é uma biblioteca com todas as linguagens possives conhecidas pelo navegador
+
+    - strong - tag para deixar parte do texto em negrito
+
+    - em - tag para deixar parte do texto em italico
+
+    - h1 - tag que cuida de titulos, para deixa-los maiores e em negrito, existem 6 niveis de h(heading), quanto maior menor
+
+    - p - tag que representa o paragráfo e tudo que usar ela, irá se comportar como um paragráfo
+
+    - lang="pt-br" - tag para cuidar da linguagem da página, isso facilitará para o navegador, caso um estrangeiro esteja acessando a página
+    o navegador ja vai oferecer uma tradução recomendada, caso o idioma do tal seja outra.
+
+    - title - tag para mostrar o titulo daquela página em si, em cima na parte da aba
+
+    - atributos que recebem propriedades - atributos são palavras que recebem um calor dentro da tag, e de acordo com o atributo escolhido
+    o texto, vai sofrer mudanças, e dependendo do atributo, podem ser grandes mudanças
+
+    - style - atributo, que lhe permite mexer com o estilo de uma tag, palavras, partes da tela, e mudar o estilo como a cor de fundo tamanho de font
+
+    - font-size - propriedade que permite alterar o tamanho da font-size(tamanho da fonte), fonte é as palavras que estão na tela
+
+    - text-align - propriedade que permite decidir como o texto será alinhando, esquerda, direita, centro, etc.. você decide.
+
+    - color - propriedade que serve para definir a cor de uma fonte em si
+
+    - background - serve para fazer varias coisas como imagem, color, e muitos outros 
+
+    - item dentro do outro - para selecionar um item dentro do outro tipo em strong, vou querer os strongs que estão
+    dentro da tag "em" ou body h1, quero todos os h1 que estiverem dentro da tag '<body>'
+    
+    - img, tag para armazenar imagem dentro da tela colocar uma imagem e poder estilizar ela totalmente
+
+    - source, propriedade para mostrar a fonte da coisa toda
+
+    - src abreviação de source, e ambas tem funcionalidades diferentes, então cuidado preste atenção
+    para usar ou uma ou outra.
+
+    - id- identificador do html, usado para especificar um certo item dentro da página html e poder acessar
+    ele dentro do css, somente pelo identificador dele. obs:"Só pode ter um id com o mesmo nome em todo arquivo"
+
+    - width | largura do elemento, basicamente pode ser definida como px, percentual, em, rem e muitas outra
+    medidas de tamanho diferente, width:100%, o elemento que tiver isso, terá a sua largura a 100% da página
+
+    - height | mesma coisa do width, só que se trata de altura, altura do elemento que o usa, você pode definir
+    tipo height:600px, o elemento que tiver isso vai ter 600px de altura consequentemente
+
+    - border | serve para adicionar uma borda a um elemento em comum, ou seja com o border você pode definir
+    a largura, o tipo da borda e a cor, ex de uso : vá no elemento e coloque border:10px solid black; 
+    uma borda de 10px, do tipo solida e da cor preta, nessa mesma ordem primeiro tamanho, tipo e cor
+
+    - margin | espaçamento externo, fora do elemento é um tipo de sopro para afastar o elemento dos demais
+    de algum lado que você escolher
+
+    - padding | espaçamento interno, dentro do elemento basicamente, é um tipo de respiro dentro, é como se 
+    você ganhasse mais espaço dentro de sua casa, o conteudo ganha um espaço a mais para se mover, e respirar
+
+    - developer Tools | apertando f12 você tem acesso a todos os elementos da página, e pode mexer, e pintar 
+    bolinhas com todos elementos da página, mas a mudança é temporaria, a partir do momento que recarrega tudo
+    volta ao normal
+
+    - ul - representa o inicio de uma lista desordenada, basicamente tudo que está dentro do ul vai servir como
+    uma lista desordenada, e vai sofrer uma alteração no padding, e margin
+
+    - li - List-Item. representa os itens da lista em sí, ou seja tudo que estiver dentro da tag ul, tem que 
+    estar com a tag li em uso para representar os itens da lista tipo <li>Item 1</li>
+
+    - class - É um outro tipo de identificador que podemos usar dentro do html, para referenciar dentro do css
+    diferente do identifier, que só pode ter um, o class pode ter infinitos itens com o mesmo nome dele
+    e para isso que ele serve basicamente, para selecionar varios por vez, assim como usamos no Li acima
+
+    - font-style - serve para você mudar algo no estilo da sua fonte, propriedade que vai mudar o estilo da fonte
+    dentro do elemento que está sendo usado isso: por exemplo mudar a fonte para italic assim font-style:italic;
+
+
+    [vertical-align] -serve assim como o text align centraliza no meio a partir do width, o vertical align
+    vai ser reponsavel por fazer o alinhamento verticalmente ou seja para cima ou baixo
+
+    [div] - serve para abrigar itens dentro dele, assim como uma caixa, armazenar elementos e dividi-los dos 
+    demais na página
+
+    inline - os elementos que tem essa propriedade embutida, vão ter o comportamento de um inline, ou seja, não
+    vão poder ter propriedades como margin padding e entre outros, e quando forem usado, eles não vão
+    quebrar linha automaticamente como o "h1" e o "p" fazem
+
+    block - os elementos que tem essa propriedade embutida, podem sofrer varios tipos de alteração, e sempre
+    que um item que possui essa propriedade é colocada em campo, eles quebram linha automaticamente e funcionam
+    como um bloco, sempre um abaixo do outro ou acima do outro, dependendo do lugar que ele está no momento
+
+    inline-block - tem as duas propriedades, ele vai funcionar como um inline, porém vai poder ter os mesmos
+    beneficios de um block, ou seja pode ser modificado, sofrer, padding, margin, e outro por ai.
+
+    header - tag semantica do html 5 que serve para mostrar ao google, e todos os motores de busca que naquela
+    localização, naquela div especial, lá está o nosso cabeçalho, o inicio do nosso site.
+
+
+
+
+
+    ------ Três formas de utilizar o CSS na nossa página Web - Inline, Interno, Externo
+
+    -- inline é basicamente quando usamos o atributo "style" dentro da tag, que vai ser estilizada respectivamente, assim como nós fizemos
+    no paragrafo naquela hora <p style="font-size:25px"></p>// aqui estou definindo que tudo que estiver nessa tag "p" vai ter 25 px de fonte
+
+    -- interno, usamos a partir do próprio html, ou seja dentro do documento html, dentro da tag head, ou seja configurações da página vamos lá
+    <head>
+        <style>
+            p{
+                text-align:center;
+            }
+        </style>
+    </head>
+
+    // no exemplo acima estou dizendo basicamente que todas as tags "p" terão o text-align:center ou seja estou selecionado todos os "p"
+    e adicionando essa propriedade a eles
+
+
+    -- externo, usamos a partir de outro arquivo que usa a extensão ".css" ou seja um arquivo que vai usar as propriedades css, e é isso 
+    no fim das contas, vamos criar um arquivo de extensão ".css" e nele vamos usar as estilizações da forma que queremos ou seja
+    dessa forma podemos fazer as coisas, sem estar poluindo tanto o novo arquivo.html 
+
+    e como eu faço para conectar o arquivo externo para dentro do html ?
+
+    atraves da tag link que fica dentro da tag head de configurações e comportamentos da página
+    "<link rel="stylesheet href="style.css"> aqui eu estou definindo uma tag link, e dei um atributo rel(relation), ou seja qual é a relação
+    desse arquivo css com a minha pagina, e disse, "ele é uma stylesheet(folha de estilo)", e com o href eu dei o link de referencia de onde encontrar
+    o meu arquivo.css que vai se vincular com essa página.
+    
+    
+    (Cores no Css) // podemos representar as cores no css a partir de hexadecimal, rgb e também a partir de cores por palavras em ingles
+    ---- rgb (red, green, blue) serve para definir as cores de acordo com número.
+    número minimo "0" 
+    número máximo "255"
+    
+    e para definir as cores a partir do rgb eu faço assim 
+    rgb(255, 000, 000) red, green, blue (respectivamente)
+    com essa cor acima eu defini o vermelho
+    e para definir preto ou branco ?
+
+    preto 
+    rgb(000, 000, 000)
+    
+    branco
+    rgb(255, 255, 255)
+
+    e temos também as cores em ingles dessa forma :
+
+    red, green, blue
+
+    e também temos uma ultima forma que se chama HexaDecimal
+    que é definido a partir de numero e letras, de 0 a 15 mas de uma forma peculiar
+    assim : 0123456789ABCDEF sendo o :
+    "0" = ausencia de cor
+    "F" = maximo de cor 
+    e cada um desses estagios representa 8.5 ou seja 8.5 * 15 = 127.5 ===== 127.5 + 127.5 = 255
+    então para conseguir o preto eu faço
+
+    #000000 0 é ausencia
+    e para conseguir o branco ?
+                                     F      F       F       F     F     F
+    #ffffff         mesma coisa que 127.5|127.5|  127.5|127.5|  127.5|127.5|
+-->
