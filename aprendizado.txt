@@ -1,0 +1,401 @@
+<!--
+    Barbearia alura primeiro projeto do curso de html e css, criando a primeira página
+
+    foi aprendido durante esse curso
+
+    ((((((TAGS APRENDIDAS NO CURSO))))))
+    (((MODULO 1))){
+        - tags -- etiquetas para mostrar e fazer diferentes tipos de efeitos, importancias, e diferenciação
+
+        - !DOCTYPE html - tag para dizer qual é a versão do html que estamos usando
+
+        - <html></html> - tag html para mostrar tudo que está na página html e armazenar dentro dela
+
+        - head - tag para armazenar as configurações, instruções de como o navegador deve se comportar dentro da página que usa ela
+
+        - body - tag para armazenar todo o conteúdo da página que irá ser mostrado consequentemente, somente as tags que vão aparecer na tela
+
+        - meta charset="UTF-8" - uma tag para cuidar das acentuações de varios dicionarios do mundo inteiro, é a tag padrão que abrange
+        o padrão de escrita mundial, e é uma biblioteca com todas as linguagens possives conhecidas pelo navegador
+
+        - strong - tag para deixar parte do texto em negrito
+
+        - em - tag para deixar parte do texto em italico
+
+        - h1 - tag que cuida de titulos, para deixa-los maiores e em negrito, existem 6 niveis de h(heading), quanto maior menor
+
+        - p - tag que representa o paragráfo e tudo que usar ela, irá se comportar como um paragráfo
+
+        - lang="pt-br" - tag para cuidar da linguagem da página, isso facilitará para o navegador, caso um estrangeiro esteja acessando a página
+        o navegador ja vai oferecer uma tradução recomendada, caso o idioma do tal seja outra.
+
+        - title - tag para mostrar o titulo daquela página em si, em cima na parte da aba
+
+        - atributos que recebem propriedades - atributos são palavras que recebem um calor dentro da tag, e de acordo com o atributo escolhido
+        o texto, vai sofrer mudanças, e dependendo do atributo, podem ser grandes mudanças
+
+        - style - atributo, que lhe permite mexer com o estilo de uma tag, palavras, partes da tela, e mudar o estilo como a cor de fundo tamanho de font
+
+        - font-size - propriedade que permite alterar o tamanho da font-size(tamanho da fonte), fonte é as palavras que estão na tela
+
+        - text-align - propriedade que permite decidir como o texto será alinhando, esquerda, direita, centro, etc.. você decide.
+
+        - color - propriedade que serve para definir a cor de uma fonte em si
+
+        - background - serve para fazer varias coisas como imagem, color, e muitos outros 
+
+        - item dentro do outro - para selecionar um item dentro do outro tipo em strong, vou querer os strongs que estão
+        dentro da tag "em" ou body h1, quero todos os h1 que estiverem dentro da tag '<body>'
+        
+        - img, tag para armazenar imagem dentro da tela colocar uma imagem e poder estilizar ela totalmente
+
+        - source, propriedade para mostrar a fonte da coisa toda
+
+        - src abreviação de source, e ambas tem funcionalidades diferentes, então cuidado preste atenção
+        para usar ou uma ou outra.
+
+        - id- identificador do html, usado para especificar um certo item dentro da página html e poder acessar
+        ele dentro do css, somente pelo identificador dele. obs:"Só pode ter um id com o mesmo nome em todo arquivo"
+
+        - width | largura do elemento, basicamente pode ser definida como px, percentual, em, rem e muitas outra
+        medidas de tamanho diferente, width:100%, o elemento que tiver isso, terá a sua largura a 100% da página
+
+        - height | mesma coisa do width, só que se trata de altura, altura do elemento que o usa, você pode definir
+        tipo height:600px, o elemento que tiver isso vai ter 600px de altura consequentemente
+
+        - border | serve para adicionar uma borda a um elemento em comum, ou seja com o border você pode definir
+        a largura, o tipo da borda e a cor, ex de uso : vá no elemento e coloque border:10px solid black; 
+        uma borda de 10px, do tipo solida e da cor preta, nessa mesma ordem primeiro tamanho, tipo e cor
+
+        - margin | espaçamento externo, fora do elemento é um tipo de sopro para afastar o elemento dos demais
+        de algum lado que você escolher
+
+        - padding | espaçamento interno, dentro do elemento basicamente, é um tipo de respiro dentro, é como se 
+        você ganhasse mais espaço dentro de sua casa, o conteudo ganha um espaço a mais para se mover, e respirar
+
+        - developer Tools | apertando f12 você tem acesso a todos os elementos da página, e pode mexer, e pintar 
+        bolinhas com todos elementos da página, mas a mudança é temporaria, a partir do momento que recarrega tudo
+        volta ao normal
+
+        - ul - representa o inicio de uma lista desordenada, basicamente tudo que está dentro do ul vai servir como
+        uma lista desordenada, e vai sofrer uma alteração no padding, e margin
+
+        - li - List-Item. representa os itens da lista em sí, ou seja tudo que estiver dentro da tag ul, tem que 
+        estar com a tag li em uso para representar os itens da lista tipo <li>Item 1</li>
+
+        - class - É um outro tipo de identificador que podemos usar dentro do html, para referenciar dentro do css
+        diferente do identifier, que só pode ter um, o class pode ter infinitos itens com o mesmo nome dele
+        e para isso que ele serve basicamente, para selecionar varios por vez, assim como usamos no Li acima
+
+        - font-style - serve para você mudar algo no estilo da sua fonte, propriedade que vai mudar o estilo da fonte
+        dentro do elemento que está sendo usado isso: por exemplo mudar a fonte para italic assim font-style:italic;
+
+
+        [vertical-align] -serve assim como o text align centraliza no meio a partir do width, o vertical align
+        vai ser reponsavel por fazer o alinhamento verticalmente ou seja para cima ou baixo
+
+        [div] - serve para abrigar itens dentro dele, assim como uma caixa, armazenar elementos e dividi-los dos 
+        demais na página
+
+        inline - os elementos que tem essa propriedade embutida, vão ter o comportamento de um inline, ou seja, não
+        vão poder ter propriedades como margin padding e entre outros, e quando forem usado, eles não vão
+        quebrar linha automaticamente como o "h1" e o "p" fazem
+
+        block - os elementos que tem essa propriedade embutida, podem sofrer varios tipos de alteração, e sempre
+        que um item que possui essa propriedade é colocada em campo, eles quebram linha automaticamente e funcionam
+        como um bloco, sempre um abaixo do outro ou acima do outro, dependendo do lugar que ele está no momento
+
+        inline-block - tem as duas propriedades, ele vai funcionar como um inline, porém vai poder ter os mesmos
+        beneficios de um block, ou seja pode ser modificado, sofrer, padding, margin, e outro por ai.
+
+        header - tag semantica do html 5 que serve para mostrar ao google, e todos os motores de busca que naquela
+        localização, naquela div especial, lá está o nosso cabeçalho, o inicio do nosso site.
+    }
+
+    (((MODULO 2))){
+        a - tag "a" que significa anchor(ancora), ela é uma tag de conteúdo, ou seja ela aceita um conteúdo dentro dela mesma
+        e usa o atributo href="", para referenciar um endereço de link, para que você seja redirecinado para outra página quando
+        clicar nela, ou tipo isso, ex site para o google <a href="http://www.google.com.br">Clique aqui para ir para o google</a>
+
+        text-decoration = serve para alterar a decoração do texto em si, com essa propriedade se faz a decoração, como 
+        tirar a decoração de um item que usa o link, fazer com que ele ao invez de mostrar cor diferente e sublinhado, tire a decoração
+        do sublinhado em si
+
+        text-transform = serve para alterar como está sendo feito o texto, como transformar todo o texto em maiusculo ou minusculo
+        , com essa propriedade text-transform, da para fazer bastante coisas, veja por ae, e entenda mais sobre isso, que vai ficar tudo
+        mais tranquilo
+
+        nav - é uma tag semantica do html, que representa a barra de navegação da página, ou então uma área que contenha uma grande quantidade
+        de links para se mover pela página em si.
+
+        font-weight = serve para definir o peso da fonte, no caso trocar uma fonte normal para bold(strong/negrito), ou deixar
+        ela semi-bold no fim do dia, temos varios pesos de fonte diferente, veja e analise melhor cada um deles, que seu conhecimento vai voar.
+
+        posicionamento - se trata de como tal elemento está posicionado na tela, ou qual o comportamento que ele está seguindo ou deve seguir
+        por padrão, os elementos na tela, de acordo com o html estrutural, sempre iniciam com o position como static, que é a posição padrão
+        onde ele foi criado respectivamente, vou explicar mais sobre os outros a seguir.
+        
+        static - É o posicionamento padrão dos elementos quando nós o invocamos no html, todo elemento já começa por padrão com esse tipo de 
+        posicionamento, e ele fica imovel como uma pedra realmente
+
+        relative - É o posicionamento com base no estatico, ele leva em consideração o ponto de partida, ou seja o ponto em que o elemento foi 
+        criado em si, porém ele agora lhe da a liberdade para posicionar o elemento, levando em consideração o ponto de partida do elemento em si
+        posso mexer nele, trocar de lugar, e se eu colocar top:0, left:0, right:0, bottom:0, no fim do dia ele vai voltar ao mesmo lugar de origem
+
+        absolute - O posicionamento absolute é diferente do relative e static, o relative, mesmo se mexendo e continuando com o valor do ponto
+        de partida, ele ao invés de ter alguma relação com a posição atual dele, a posição dele passsa a ser absoluta, ou seja, se eu colocar
+        top:0, ele realmente vai para o topo da página mesmo, quando comportamento é absoluto, ele leva em consideração toda a página e não está
+        nem ai, para o ponto de partida onde ele foi criado em si
+
+        reset.css - É um arquivo folha de estilo que serve para limpar todas as alterações feitas pelo navegador em si, ou seja ele vai entrar
+        no navegador, entrar na área de estilo e vai colocar tudo como padrão e sem nenhuma alteração trocada por sinal, esse arquivo é muito importante
+        caso você não queria muito ficar escrevendo toda vez, mudanças em sua página, lembrando ele deve estar dentro da tag head, e logo acima do
+        link stylesheet da sua página respectivamente, se você colocar ele após os seus estilos, quando o navegador abrir, ele vai aplicar o seu
+        estilo e logo em seguida vai apagar tudo, pois vai resetar todo o estilo do navegador "resetar", e posicionamento, e ordem importam sim no html
+
+        main - tag semantica do html 5, que representa a div main, que vai guardar os itens mais importantes da nossa página, no caso
+        o conteúdo principal daquela página na verdade, e com isso nós vamos fazer isso agora.eX:
+        Produtos.html// se a página é sobre produtos, nada mais justo que o principal da página seja os produtos em si. concorda ?
+        <main>
+            cabelo 
+            barba
+            cabelo + barba 
+        </main>
+
+        box-sizing:border-box - serve basicamente para fazer com que o tamanho de um item, seja o tamanho original sempre, mesmo com interferencia
+        de padding ou margin externos, e com isso, dessa forma, mesmo que eu defina uma largura de 300px, e defina um padding interno de 10px
+        o padding não vai mais ser 320px, mas vai continuar como 300, e vai ser descontado da largura original no fim das contas, os elementos
+        vão ficar mais abraçadinhos, e não vão sofrer uma alteração do tamanho original definido
+    
+        border - serve para você definir uma borda para o seu elemento em si, com isso ele vai fazer uma borda de acordo com o padding, e margin
+        de onde começa e onde deve terminar, a borda tem bastantes tipos variados, sendo eles, solid, dashed, dotted, double e outro por ai mesmo
+        você pode definir da forma mais simplificada : border: 1px solid #ff0000; ou do jeito mais verboso :
+
+        border-width - aqui você definir apenas a largura da borda em si, tipo eu quero uma borda de 2px, para todos os lados, vc pode 
+        definir assim mesmo. 
+
+        border-style - aqui você defini o estilo da sua borda, como : a solid, dashed, dotted, double e outro por ai.
+
+        border-color - aqui você vai definir a cor da sua borda em si, com isso, tudo fica mais colorido não acha ?
+
+        border-radius - aqui você defini o grau de raio da sua borda, basicamente o sistema vai desenhar uns circulos nas bordas, no topo esquerdo
+        topo direito, baixo esquerdo e direito, e vai apagar de acordo com o tamanho do raio em si, o border radius serve para arredondar sua 
+        borda
+
+        hover - serve basicamente para aplicar alguma estilização quando você for passar o mouse por cima de algum elemento que o esteja usando
+        para aplicar o hover a um elemento podemos fazer assim : exemplo apenas : === li:hover{
+            font-size:22px;
+            color:red;
+        }
+        quando passar o mouse por cima desse item li, ele vai aumentar a fonte em 22px, e a cor vai ser red;
+
+
+        active - também é uma pseudo-classe que serve para fazer alguma ação quando você clicar no elemento em si, tipo quando você clica em um
+        elemento, ele vai executar alguma ação, assim como o nosso hover, porém esse vai ter alguma ação somente durante o clique.
+
+        selecinando um elemento hover, a partir de outro, tipo quando eu passar o mouse por cima do "li", ele vai fazer com que outro elemento
+        faça outra coisa, uma outra mudança respectivamente.
+
+        footer - tag de rodapé que representa em outras palavras, o rodapé mesmo, e com tudo que estiver lá dentro será considerado parte do 
+        rodapé, e é isso pessoal, até a próxima;
+
+        uniCode- é um codigo que se colocado no html, css ou javascript vai sofrer uma mudança diferente para cada tipo de tipo de codigo
+        que você for colocar, para mais duvidas de como usar entre no site https://unicode-table.com/pt/ e saiba mais sobre como usar
+        usamos mais a forma de entidade do html
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ((((((((FORMAS DE USAR O CSS NA PÀGINA)))))))
+
+    ------ Três formas de utilizar o CSS na nossa página Web - Inline, Interno, Externo
+
+    -- inline é basicamente quando usamos o atributo "style" dentro da tag, que vai ser estilizada respectivamente, assim como nós fizemos
+    no paragrafo naquela hora <p style="font-size:25px"></p>// aqui estou definindo que tudo que estiver nessa tag "p" vai ter 25 px de fonte
+
+    -- interno, usamos a partir do próprio html, ou seja dentro do documento html, dentro da tag head, ou seja configurações da página vamos lá
+    <head>
+        <style>
+            p{
+                text-align:center;
+            }
+        </style>
+    </head>
+
+    // no exemplo acima estou dizendo basicamente que todas as tags "p" terão o text-align:center ou seja estou selecionado todos os "p"
+    e adicionando essa propriedade a eles
+
+
+    -- externo, usamos a partir de outro arquivo que usa a extensão ".css" ou seja um arquivo que vai usar as propriedades css, e é isso 
+    no fim das contas, vamos criar um arquivo de extensão ".css" e nele vamos usar as estilizações da forma que queremos ou seja
+    dessa forma podemos fazer as coisas, sem estar poluindo tanto o novo arquivo.html 
+
+    e como eu faço para conectar o arquivo externo para dentro do html ?
+
+    atraves da tag link que fica dentro da tag head de configurações e comportamentos da página
+    "<link rel="stylesheet href="style.css"> aqui eu estou definindo uma tag link, e dei um atributo rel(relation), ou seja qual é a relação
+    desse arquivo css com a minha pagina, e disse, "ele é uma stylesheet(folha de estilo)", e com o href eu dei o link de referencia de onde encontrar
+    o meu arquivo.css que vai se vincular com essa página.
+    
+
+
+
+
+
+
+
+
+
+    ((((((CORES NO CSS)))))
+    
+    (Cores no Css) // podemos representar as cores no css a partir de hexadecimal, rgb e também a partir de cores por palavras em ingles
+    ---- rgb (red, green, blue) serve para definir as cores de acordo com número.
+    número minimo "0" 
+    número máximo "255"
+    
+    e para definir as cores a partir do rgb eu faço assim 
+    rgb(255, 000, 000) red, green, blue (respectivamente)
+    com essa cor acima eu defini o vermelho
+    e para definir preto ou branco ?
+
+    preto 
+    rgb(000, 000, 000)
+    
+    branco
+    rgb(255, 255, 255)
+
+    e temos também as cores em ingles dessa forma :
+
+    red, green, blue
+
+    e também temos uma ultima forma que se chama HexaDecimal
+    que é definido a partir de numero e letras, de 0 a 15 mas de uma forma peculiar
+    assim : 0123456789ABCDEF sendo o :
+    "0" = ausencia de cor
+    "F" = maximo de cor 
+    e cada um desses estagios representa 8.5 ou seja 8.5 * 15 = 127.5 ===== 127.5 + 127.5 = 255
+    então para conseguir o preto eu faço
+
+    #000000 0 é ausencia
+    e para conseguir o branco ?
+                                     F      F       F       F     F     F
+    #ffffff         mesma coisa que 127.5|127.5|  127.5|127.5|  127.5|127.5|
+-->
+
+
+
+<!--Usado nesse inicio, a criação da página, header usado para armazenar o total cabeçalho
+e para dar uma importancia a mais para a logo, eu armazenei a tag img dentro do H1
+
+e por conta disso, ele vai sofrer um tom de importancia maior
+
+e logo apos uma lista para fazer o menu, com os list itens que armazenam os nomes das páginas
+
+
+
+// segunda aula 
+
+foi visto agora sobre a linkagem, no caso como fazer com que uma página se ligue a outra a partir de link em si
+com isso, agora nós sabemos como ligar uma pagina a outra e isso é muito bom, para isso nós usamos a tag :
+
+"a"(anchor), ancora ou seja, vou ancorar essa palavra "clique aqui", para um link da minha página
+vou acorrentar essa palavra, e quando alguem clicar sobre ela será redirecionado para um link, um local novo
+em minha página
+
+// terceira aula, posicionamento
+
+agora eu coloquei o menu como absolute, para isso eu selecionei a tag nav, para fazer com que o menu tenha um comportamento absoluto em questão
+a página em si, e com isso agora ele pode ir para qualquer lugar que queira em toda a página, eu posicionei para ele ficar a 110 px do topo, para que
+ele fique bem no centro da página 
+
+e se for parar para ver a imagem da logo, e o menu, estão bem colados na tela, um para o lado e o outro para o outro, agora eu quero fazer com
+que eles fiquem no meio certinho e com um tamanho fixo para evitar que o conteudo e espalhe pela página em si, com isso eu vou fazer isso agora
+eu criei uma caixa, para armazenar a foto e o menu, e para que a caixa também consiga pegar o menu, ou seja para que ela também consiga alcanca-lo
+eu fiz com que a caixa virasse relativa, ou seja, ela vai poder se mexer livremente de acordo com o ponto de partida em que ela foi criada,
+e como ela está relativa ela também pode pegar o absolute que tem um comportamento bem parecido.
+
+eu setei a caixa como 940px, e tendo um margin auto para que ficasse centralizado ao meio, sem nenhuma interrupção independente do tamanho da 
+tela em si, e agora eu também coloquei um padding de 20 px, de altura, para que todo conteudo fique contralizado ao meio, e com isso eu encerro
+aqui o meu menu, posicionamento e tudo isso mais, agora vamos para a parte de produtos
+
+// quarta aula, criação da tag main, tag de conteudo principal da página
+
+Eu criei uma tag main para armazenar o cabelo, barba e cabelo + barba nos conteudos principais, nesse momento agora, após o final da segunda 
+aula, eu criei uma ul, para armazenar os meus produtos, e cada um "LI" tem os conteudos respectivamente, com o seu nome, e cada um 
+deles eu coloquei depois, "imagem", e duas tag p para representar a informação do produto, e preço do produto, respectivamente claro
+
+cada um deles terá a mesma estrutura, dentro de um li, com o h2 representando o servico, a imagem do serviço em seguida, e logo depois, 
+também temos o famoso "p" para falar sobre o serviço e também o segundo "p", preço.
+
+Nessa aula agora, eu adicionei uma margem para a esquerda e direita de 1.5% para cada lado, ou seja se meus itens tem 30% cada então com uma margin
+de 1.5% de cada lado, cada um deles terá 33% gerando 99% ao todo, e sobrando 1% para largura total da ul, e com isso, agora eu vou também fazer
+um padding interno do item, colocando 30px para cima e 20px para os lados, com isso, para dar um respiro para os meus itens dentro do li
+, porém quando eu fizer isso, do padding, ele vai adicionar ao meu item e com isso vai quebrar todo o meu layout, tudo vai ficar gordo e vai
+descer totalmente para baixo, e não é isso que eu quero, por isso, vou entrar no meu "li", para adicionar a propriedade "box-sizing: border-box"
+para que de acordo com o tamanho que eu defini, tudo que eu for adicionando depois vai fazer parte da minha largura, e não aumentar por nada
+com essa propriedade quando eu colocar border, ou padding, tudo vai ser descontado do tamanho original, somente o margin é quem vai estar livre
+
+e agora que eu fiz isso, vou entrar na propriedade de preços, e vou dar um margin top de 20px ,para descolar um pouco da superficie, e o preço
+ficar bem mais normal, e podendo respirar assim por diante, e com isso eu encerro aqui a aula 3, sobre como fazer isso tudo. te vejo na proxima aula!
+
+
+// quinta aula, nessa aula eu mexi com as bordas, definindo as bordas normalmente com o border-style, border-width,  e border-color, e também
+aprendi de uma forma mais simplificada, como fazer as bordas a partir de uma unica propriedade chamada "border" que leva consigo as 3 escolhas
+nas costas, esperando um tamanho, tipo e cor respectivamente, usei a border:2px solid #000; para definir uma borda solida de 2px da cor preta
+a um elemento, e também para arredondar eu coloquei o border-radius, que defini basicamente a parte de arredondamento do item em si.
+
+com o border radius eu posso fazer isso, facilmente, tipo se eu coloco border-radius:10px, ele meio que vai fazer um circulo em cada ponta
+e vai apagar conforme o raio do circulo cada ponta, fazendo a impressão de uma borda mais arredondada, e com isso, eu usei o border-radius:10px,
+para arredondar cada lado em 10px e deixar meio redondo todas as pontas respectivamente.
+
+
+// aula 6, nessa aula eu estou aprendendo a mexer com o hover, agora para deixar um tom mais de interação com a página, com essa pseudo-classe
+eu posso, claramente, fazer com que no momento que eu passar o mouse por cima do elemento, ele vai ter comportamentos diferentes, de acordo 
+com a minha ação, e por isso.
+
+eu adicionei o hover, aos links de navegação do meu header, então quando eu passar o mouse por cima daqueles elementos acima do menu que eu centra
+-lizei, agora eles vão ficar meio dourados, ou amarelos.
+
+Eu também adicionei por ultimo um hover aos elementos Li, que estão na aba de produtos, com eles eu posso, a cada vez que passar o mouse por cima
+a borda dos produtos, vão ficar douradas assim como o menu, e também adicionei uma pseudo-classe para que quando eu clicar no elemento, a borda
+do elemento vai ficar verde, e isso vai acontecer sempre que eu clicar, é para isso basicamente que o :active serve, para sempre que ele for
+ativado por alguma coisa, ou estiver sendo ativado, e também logo após isso eu também fiz outra mudança dessa vez atraves de um elemento
+
+atraves do hover do li, eu coloquei agora para que quando eu passar o mouse por cima do li, além dele ficar com a borda dourada, ele também vai
+aumentar o tamanho do h2 que está dentro dela, como eu fiz isso ? quando eu passar o mouse por cima do li:hover, ele automaticamente vai 
+ser redirecionado para o elemento h2 que está dentro dele, e vai fazer uma mudança no tamanho da fonte, respectivamente, com isso foi esse 
+o código que eu usei para chegar nisso : ".produtos li:hover h2", quando eu ativar o Li:hover, você vai até o h2 e executa alguma mudança
+que eu desejar.
+
+
+// aula 7 final, nessa aula basicamente eu vou apenas fazer o footer mesmo, para fazer o footer eu usei a tag semantica "footer", que reprensenta
+o rodapé em si, ou seja a parte final do site, que aborda alguns contatos, criadores, copyright e etc.
+
+dentro dessa tag footer eu coloquei uma tag img, com a logo-branca.jpg da barbearia alura, e logo abaixo eu coloquei um paragrafo com o texto
+c(de copy) copyright Barbearia Alura - 2019, e com isso, eu fiz o meu rodapé
+
+só que nessa aula eu também fiz o rodapé ter um background-image, a partir da chave "url", e com isso eu fiz com que o item tenha uma imagem 
+de fundo, e agora a logo branca por aparecer normalmente, e bem legal.
+
+eu também alterei o tamanho da fonte do meu texto do copyright para 13 px, para ficar bem pequena, e com isso eu encerro esse modulo de produtos.
+-->
