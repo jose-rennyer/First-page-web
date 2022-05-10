@@ -204,7 +204,191 @@
         usamos mais a forma de entidade do html
     }
     
+    Modulo 3 (((((()))))) -- inputs, tabelas e formulários{
+        form - tag que representa o formulário da pagina ou seja tudo que estiver dentro dessa tag vai fazer parte de um formulário,
+        geralmente o que fica dentro dessa tag são os inputs, textarea, buttons, selects e muitos outros da mesma familia de informações.
 
+
+        label - label é um identificador, no caso uma etiqueta que serve para identificar o input em si, e fazer
+        que quando clicar no label Responsavel pelo input que ele engloba, o campo será automaticamente focado 
+        para uso do usuário em si, o label tem duas formas de uso bem interessantes, sendo elas, englobar totalmente
+        o conteudo dentro do label, ou usar a propriedade for para identificar que input deve ser selecionado no
+        momento em que o label for clicado.
+
+        for - É um atributo da tag label em geral, mas pode ser usado em qualquer tag respectivamente, porém ela
+        é sempre usada no label, para poder identificar "para" quem é o input que eu vou redirecionar e dentro
+        dele você coloca o id do input que deve ser focado quando clicar no label tipo for="inputDeTexto" sem o "#"
+
+
+        input - É um campo que serve para pegar informações do usuário, no caso pegar informações do usuário a partir do campo e fazer
+        alguma coisa a partir disso tudo.
+
+
+        type="text" - o input que usar esse atributo terá as caracteristicas de um tipo texto, e aceita qualquer tipo de coisa escrita
+
+
+        type="submit" - o input submit serve basicamente para isso mesmo, enviar, ou seja ele é um botão, que quando clicado irá enviar o 
+        formulário em si, e é isso que vai ocorrer.
+
+        value - é um atributo que vai alterar o valor de algum campo, no caso só se aplica mesmo a inputs e outros desse mesmo tipo
+    
+        type="radio" - é um tipo de input que vai fazer com que o input tenha o campo de bolinha para ser marcada e escolhida entre uma ou outra
+
+        textarea - é um campo que pode ser gigante ou miudo, e pode ser escolhido o tamanho dele também, é um campo gigante de palavras 
+
+        cols - é basicamente um atributo do campo textarea que vai servir para ditar quantas colunas o textarea tera tipo cols="20"(colunas)
+
+        rows - É basicamente o número de linhas que um campo do tipo textarea terá, tipo rows="10" terá 10 linhas ao todo
+
+        type="checkbox" - é um campo pre-configurado que vai fazer uma caixinha, e a possibilidade de você clicar nela para marcar ou desmarcar
+
+        name="" - é um atributo de input que serve para você dar um nome para um item, e fazer escolhas entre eles, bastante usado e obrigatório
+        entre inputs do tipo radio
+
+        select - É uma tag de formulário também que serve para você selecionar uma determinada opção em si, tipo aquelas caixinhas, você clica
+        e vai descendo uma listinha, com varios itens para você escolher entre um deles, basicamente.
+
+        option - Complemento da tag select, e serve para ser basicamente as opções que vão aparecer para você escolher entre elas em si
+        ela assim como o select é uma tag de conteudo ou seja, ela precisar ter um conteudo dentro dela, obrigatóriamente, se não vira uma 
+        caixa vazia
+
+        input type="tel" - inputs que usam esse tipo, no computador não vão mudar muito, basicamente ele é feito para aceitar, números de telefone
+        , mas no celular ele vai mudar bastante pois, quando o usuário acessar pelo telefone, o teclado vai ter uma breve mudança, o teclado vai trocar
+        automaticamente para o teclado de número de telefone, o mesmo que quando vc vai ligar para alguem. 
+
+        input type="email" - O input de email, vai meio que pré-formatar o campo para aceitar somente emails, que tenham @ e um dominio em si
+        , no celular a mudança vai ser que ele vai colocar um @ e quem sabe um ".com", logo perto das tecla dos teclados, para que quando ocorrer
+        de você está cadastrando um email, fique mais facil de você completa-lo
+
+        input type="date" - Input do tipo date, serve basicamente para escolher uma data, seja ela de aniversário, ou outra coisa, bem não importa
+        já no celular, o input do tipo date vai se comportar com um comportamento nativo da sua plataforma.
+
+        input type="number" - O input do tipo number, obrigatóriamente vai aceitar apenas números mesmo, no pc vai ter essa configuração, já no mobile
+        vai ter uma mudança, ele basicamente vai aceitar números também, só que ele já vai iniciar no teclado de números, e caracteres especiais.
+
+        input type="search" -  O input do tipo search é basicamente um input de procura, e no pc quando você escrever qualquer coisa vai aparecer
+        automaticamente um "X" para você apagar o que você escreveu se quiser, já no celular vai existir um botão de "search", embutido no teclado
+        que serve basicamente para finalizar a busca, e procurar o que você está querendo encontrar.
+
+        required - quando colocamos essa palavra-reservada no input, quer dizer que ele é obrigatório o preenchimento
+
+        placeholder - São as palavras que vão aparecer no fundo, como um exemplo do que deve estar escrito naquele campo
+
+        checked - É a palavra-reservada, que vai servir para marcar um item, tipo um radio, ou checkbox, é basicamente para deixar o item marcado
+        enquanto nenhum outro vai ser marcado naquele momento.
+
+        fieldset - fieldSEt é basicamente uma tag semantica de formulário, tipo quando queremos, agrupar um certo grupo de tal informação, tipo
+        nesses 3 campos aqui, são sobre o cartão de credito, então nada melhor que agrupa-los todo em um lugar só né? ao invés de usar a div
+        o fieldset pode ser uma ótima alternativa no fim das contas 
+
+        legend - a tag legend, serve para dar uma legenda ao item em si, no caso, a tag legend é uma tag que anda colada com a fieldset, é ela
+        que vai dizer, a legenda daquele fieldset, qual é o assunto desse fieldset? sobre o que ele abrange ?
+
+        alt - é um atributo de tags de imagem e outras com o mesmo objetivo mostrar algo visual na tela, de fora da página, a tag alt serve para
+        descrever algo alternativo na página, tipo um texto alternativo para caso aquela imagem não carregue, e sendo assim, algo tem que 
+        explicar o que tinha ali dentro né? e por isso até para pessoas que tem deficiencia visual, que não consegue ver aquilo, essa tag pode se 
+        tornar algo muito bom e bem especial para ele, faça da vida das pessoas, algo muito especial.
+
+        input type="password" - é um tipo de input que vai escrever qualquer coisa que esteja sendo escrita, ou seja com as mesma configurações 
+        de uma senha normal. tudo que for escrito nesse campo vai ficar com bolinhas pretas, mas tem como reverter isso com aquele olhinho que fazemos
+        em javascript.
+
+    }
+    Modulo 4 (((((()))))) -- Avançando no css{
+        transition - transition cuida da transição do elemento, o que ele vai precisar passar para chegar aquela mudança final em si 
+
+        cursor - é uma propriedade que vai alterar como o cursor do mouse vai se comportar perto de algum elemento quando o mouse for passado 
+        por cima de tal elemento que esteja usando tal propriedade, na sua seleção 
+
+        transform - é uma propriedade que vai fazer com que um elemento sofra uma transformação de acordo com a propriedade que você escolher
+        em seguida, temos varios como o "scale","rotate","skew", e muitos outros, vou falar de dois aqui abaixo.
+
+        scale - O Scale cuida basicamente da escala do elemento, a escala nada mais é do que o tamanho dele, e como ele está sendo visto na 
+        página, se eu alterar a escala em 1.5 ele vai crescer 50% maior do tamanho original, e vai ficar 150% de tamanho comparado ao original
+        se eu coloco a transform:scale(0.5) eu vou diminuir e fazer com que ele se comporte mostrando 50% do tamanho comparado ao original.
+
+        rotate - O rotate vai cuidar da rotação de um elemento basicamente, ele recebe o valor da rotação em graus ou seja "deg"(degrees), e de 
+        acordo com o tanto de rotação ele vai rotacionar, tipo se eu coloco : [transform:rotate(90deg)]ele vai girar em 90graus, e pode ter um 
+        efeito bastante incrivel, se estiver junto com alguma pseudo-classe"hover e estiver usando o transition:1s all"
+
+        table - basicamente é uma tabela bem simples, uma tabela usada para colocar informações, imagens, o que você preferir, tudo acontece
+        de acordo com o que você quer obviamente, cabe a sua criatividade, a <table></table> é a tag de criação de tabela a partir dela você
+        pode fazer as suas tabelas
+
+        thead - tag semantica de tabela que vai cuidar de armazenar todo conteudo de cabeçalho da tabela, com essa tag você ajuda os motores de busca
+        e toda acessibilidade da internet a identificar melhor o funcionamento da sua tabela e do comportamento do seu site, como ele deve ser interpretado
+
+        tbody - tag semantica de tabela que vai cuidar de armazenar semanticamente todo o conteudo do corpo da sua tabela, respectivamente, com isso
+        ele tem o mesmo efeito do thead, e vai ajudar a saber o que está ali, e vai ajudar os motores de busca a identificar e ranquear melhor o seu site
+        durante uma procura na internet. isso representa a grosso modo o corpo da sua tabela e o local que os dados que vão aparecer devem estar armazenados
+
+        tr - significa table row, ou seja a linha da tabela em si, a linha que difere uma da outra, dentro da tr, é onde ficam armazenados os 
+        td(que significam table data "dados da tabela"), e de acordo com o numero de colunas existentes, vocês deve preencher com um número exato de
+        "tds"
+
+        td - table data, nada mais é que os dados da tabela, sempre estão associados ao tbody, que é a tag semantica que cuida do corpo da tabela
+        ou seja, com o td, você coloca os dados da página exemplo de uso da td
+        <tr>
+            <td>Brasil</td>
+            <td>5 títulos</td>
+        </tr>
+
+        colspan - É na verdade um preenchedor automatico de colunas, tipo caso alguma "tr", não tenha o número de tds, maximo possiveis, é ai
+        que entre o colspan, que vai cuidar de preencher com um span, as colunas que estão sem serem preenchidas, tipo, se a tabela tem 3 colunas
+        a primeira linha tem 3 itens, a segunda também 3, porém a ultima só tem um item, e você não quer deixar o espaço em branco, você usa o 
+        colspan, naquele item no "td" assim :
+        <tr>
+            <td>um</td>
+            <td>1</td>
+            <td>one</td>
+        </tr>
+        <tr>
+            <td>dois</td>
+            <td>2</td>
+            <td>two</td>
+        </tr>
+        <tr>
+            <td colspan="3">three, três, 3</td>// ou seja ele vai preencher as 3 colunas, ele vai ter um colspan de 3, e vai ocupar 3 lugares
+            as 3 colunas respectivamente.
+        </tr>
+
+        linear-gradient - Nada mais é que um degradê, com essa propriedade do css, você pode fazer backgrounds incriveis para a sua tela, site
+        ou landing page, como você preferir, o linear-gradient, leva em consideração no minimo 2 cores, é o minimo para que ele funcione 
+        exemplo de uso. background-imagem: linear-gradient(#fefefe, #555555);// ele basicamente vai representar essas cores com uma transição
+        do #fefefe para o #555555, da esquerda para direita, mas isso depende de você obviamente, você também pode escolher de que lado ele se comporta
+        tipo se você colocar linear-gradient(to top, #fefefe, #555555)// ele vai fazer a transição de degrade para cima
+        se colocar "to bottom" vai para baixo e to left e to right, para esqueda e direita respectivamente.
+        e só para você saber, ele não aceita apenas 2 cores. duas cores são o mínimo, ele aceita quantas você quiser.
+        você também pode definir em deg, graus, para onde ele vai se mover e como vai se mover, assim > linear-gradient(90deg, #fff, #000)
+
+
+        radial-gradient - é a mesma coisa que o linear gradient, só que ele é em radianos, ou seja ele faz um degradê circular, ou seja diferente
+        do linear-gradient que faz em linha, o radial faz um degradê circular, esferal("nem sei se essa palavra Existe"), nele você não precisa escrever
+        os "deg" ou "to" alguma posição.
+
+        media(Query) - nada mais é que as medidas, definidas por você, tipo como você vai definir uma configuração de css especifica, para 
+        determinado tamanho minimo ou máximo de tela, e com o media query Você pode definir isso, suponhamos que eu queira fazer com que quando
+        a tela tenha no minimo 600px, ele vai ter uma certa configuração um background:vermelho, e quando for de 599px, para baixo vai ter um
+        background:verde
+
+        media screen and (min-width:600px){
+            body{
+                background:red;
+            }
+        }
+        media screen and(max-width:599px){
+            body{
+                background:green;
+            }
+        }
+
+        meta viewport - serve para que o celular se comporte assim como está no computador, ou seja se os pixels do computador são especificamente uns
+        os do celular tem que se comportar, da mesma forma, ou seja, se no pc, a tela é basicamente 1200px e no celular a largura é 320px. então o celular
+        vai quebrar totalmente, afinal são muitos pixels restantes, e é ai que o media query Entra para deixar o site responsivo.
+
+        media screen and (max-width){} - serve para mexer na tela quando ela tiver certa configuração, ou condição sendo seguida, tipo o exemplo
+        que eu dei ali em cima, mexa na media query da tela, e quando ela tiver (max-width:600px), faça tal configuração.
+    }
 
 
 
@@ -399,3 +583,558 @@ de fundo, e agora a logo branca por aparecer normalmente, e bem legal.
 
 eu também alterei o tamanho da fonte do meu texto do copyright para 13 px, para ficar bem pequena, e com isso eu encerro esse modulo de produtos.
 -->
+
+
+
+// modulo 3 aula de como fazer a página de contatos
+
+Nessa aula eu basicamente renomeei o nome do style.css para style-home.css pois ele só cuida de uma página no caso a home, porém as páginas
+de produto e contato, tem a mesma estrutura básica como o menu, logo e rodapé, então já que ela é uma página padrão que vai ser usada bastante
+durante as páginas então podemos, renomear ela para style.css já que ela é a padrão e mais repetente.
+
+Eu copiei o header e footer, e a estrutura basica do html, pegando o link de style.css e reset.css para reaproveitar o style.css e não precisar
+fazer o cabecalho totalmente de novo.
+
+fiz a tag main entre o footer e o header, e agora eu coloquei a tag form que representa o formulário, e com isso eu basicamente, coloquei uns 
+4 inputs e usei labels para identificar os inputs respectivamente, usei inputs simples de type text, e um id para cada, para poder ser identificador
+a partir do for, que é um atributo que está dentro da tag label.
+
+e por fim coloquei um input do tipo, submit para enviar os dados, e coloquei um atributo value, para mudar o valor do campo submit que representa
+o envio em si.
+--------------------------------------------------------------------------------------------------------------------------------------------
+2 - Nessa segunda aula eu fiz basicamente mudanças no input e em algumas tags vamos lá
+
+Eu adicionei agora um width fixo a tag main, no caso 940px, e um margin: 0px auto, para centralizar minha tag de formulário bem ao meio, e com 
+isso, tudo vai ficar bem mais no meio, e para adicionar um respiro a minha área de main, eu coloquei um margin 40px para cima e para baixo
+e 0 para os lados para que essa área ganhasse um pouco mais de espaço, e com isso tudo ficasse bem melhor de se ver.
+
+mas mesmo concertando tudo isso, ainda dá para perceber que os inputs e os labels, ainda estão um ao lado do outro, inclusive o botão também
+isso ocorre porque todos inputs e tags label, são basicamente inlines ou seja só ocupam o tamanho do seu conteudo e por isso não quebram
+linha, diferente dos blocks que a largura dele é 100% da área, já que eles são blocos, e blocos ficam um acima ou abaixo do outro
+
+por isso eu dei um display block para o input e para o label, e tudo isso agora parece um formulario bem mais amigavel do que tudo um 
+ao lado do outro, para dar uma melhoradinha eu dei uma espaçada entre o label e o input que ele atende, agora eu dei um margin-bottom para baixo
+de 10px, para descolar um do outro basicamente.
+E já que os labels tem uma fonte meio pequena e eu quero dar um destaque melhor para as letras que estão escritas, então eu também aumento
+o font-size para 20px, para que fique mais visivel, para que aquele campo serve, e porque ele está bem ali.
+
+agora passando para o input, dá para perceber que o input está bastante magro, e meio sem lógica o input bem magrinho em época de comida não ?
+por isso eu vou dar um padding de 10px para cima e para baixo, e também um padding interno de 25px para um lado e para o outro para que 
+o input a partir de agora ganhe um espaço interno bem maior e bem mais espaçado por assim ser, dessa forma fica mais legal escrever no input
+porque você, vê tudo que você quer ver e sem nenhuma limitação de tamanho em si.
+
+fora isso também dei uma margin-bottom para baixo de 20px, e logo após cada input sempre terá uma margin de 20px para baixo, para que nenhum
+campo fique dessa forma, no fim do dia, e para melhorar ainda mais o campo, agora eu dei um tamanho de 50% de largura para os campos de input
+e todos eles agora estão funcionando assim dessa forma, e bem grandes e gordos.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+3 - aula 3 
+
+Nessa aula eu basicamente fiz a adição de um novo campo chamado textarea, que foi feito para receber grandes quantidades de texto
+fiz com que o tamanho dele fosse baseado em 70 colunas e 10 linhas, basicamente isso são atributos e foram usado na tag textarea
+
+também dei um id para ele para que o label pudesse identificar que quando clicado na mensagem, seria redirecionado para o campo de mensagem
+
+adicionei também 3 novos vamos de radio, que é uma bolinhas que foi feita para ser marcada, porém só pode ter uma bolinha marcada do mesmo
+assunto, e para isso destinguir cada um, eu coloquei o atributo name em cada uma delas, para saber que se tratam do mesmo assunto, e com isso
+agora quando clicadas, as outras são desmarcadas, associei cada uma delas a uma label, com o tipo de contato preferivel comportamento
+
+email, ligação e whatsapp respectivamente. e cada um deles tem um id com "radio-" assunto
+
+e por ultimo coloquei todos eles em uma div, e coloquei um paragrafo bem no inicio da div dentro dela, com o texto, Como prefere o contato eu acho 
+
+e logo após eu fiz um label com conteudo dentro que é outra forma de usar o label, e com isso eu adicionei o input do tipo checkbox com a baixa para ser marcada
+e logo após eu coloquei o texto, se prefere receber as novidades por email.
+
+
+
+Nessa ultima aula eu cuidei da parte do css da página para arrumar uns tamanhos de inputs e algumas coisas por ai, eu coloquei uma tag para os
+inputs que eu quero que crescam 50% da página na área de width, coloquei apenas para o campo de nome, mensagem, telefone e email,
+
+agora eu coloquei os itens de range dentro do próprio label, porque isso é bem util para ser usado, e também é uma forma de ser usado no fim
+
+com isso eu evitei que os itens fiquem um abaixo do outro afinal o label tem display block também, apenas os itens pre-selecionados vão ter agora
+o width em 50%
+
+armazenei o input de checkbox dentro do label dele mesmo e antes da frase para que fique com um efeito bem legal e também fiz a mesma coisa para
+os inputs do tipo radio, eles agora ficam ao lado do item descrito, para dar mais um ar de "escolhi essa daqui"
+
+e com isso eles ficam bem colocados e sem muitos bugs, o botão de mensagem fica pequeno mesmo, já que não faz mais parte.
+
+
+
+
+
+Aprendizado dessa aula foi sobre a força do css e dos seletores em si, foi colocado na aula exemplos como tag, tag dentro de tag, classe, 
+tag que tem tal classe, id  e por ultimo inline
+
+ou seja se colocamos um item apenas pela tag name, nós vamos basicamente estar dando a força "1" de especificidade, ela é uma força fraca
+e pode ser sobrescrita por qualquer uma com muita facilidade.
+
+quando selecinamos uma tag a partir de outra tag, nós damos a essa especificidade basicamente a forca "2" e por isso, se colocarmos isso dentro
+do css, ele vai sobrescrever a style que demos para a tag.
+
+quando colocamos uma classe, a classe tem o valor de 10, basicamente e com isso ela vençe a tag sobre tag, porque uma classe é um tipo de seletor
+bem mais forte que a própria tag em si.
+
+quando colocamos uma tag a partir da classe dela tipo isso p.texto, todas as tags p que tiverem a classe texto embutida, vão receber essa
+estilização, ou seja apenas as tags p com a classe texto., e isso teria uma força de "11"
+
+quando colocamos o ID, a força da especificidade fica muito maior, chegando mesmo até os "100", que passa facilmente a classe e a tag em si
+com esse nivel de especificidade tal elemento vai ficar facilmente do jeito que você quer apenas.
+
+agora um tipo de especificador de elemento, bem mais forte que isso é o css-inline, que vai estilizar o elemento na linha em si, na própria linha
+do elemento, você vai dizer o que quer que o seu elemento tenha, de estilização naquele momento.
+
+
+
+Nessa ultima aula da aula 3 eu basicamente só fiz o campo de select, ou seja aquele campo de que horario prefere ser atendido ? 
+coloquei o campo select, para selecionar um dos horários escritos nas tag option e para isso usei as tags que andam juntas que são os 
+"select" e "option" select sendo pai de option obviamente
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+Aula 4 - basicamente nessa aula eu vi sobre a importancia dos inputs respectivamente, e com isso eu vi o comportamento deles no computador
+e em alguns dispositivos mobile, como o input search, date, tel, number, email, e outros por ai também, vi sobre isso e também no meu html
+eu alterei algumas coisas como, o tipo de alguns inputs como o campo de email agora é do type "email", e o campo de telefone agora é do tipo "tel"
+
+Fiz uma breve descrição de alguns tipos de input, no meu campo de aprendizado, do modulo.
+
+
+
+Nessa aula de agora, eu aprendi sobre, o required, placeholder e também o checked, e apliquei eles no meu site de contato
+colocando o placeholder dentro do campo de email, com um exemplo do que deve ser escrito lá dentro, mesma coisa com o campo de telefone um 
+pequeno exemplo dentro dele de como eu quero o formato do telefone, e deixei o whatsapp checked para já deixa-lo marcado, e o campo de checkbox
+também. 
+
+
+
+Nessa aula final desse modulo, eu basicamente usei um html mais semantico, nas áreas de que abrangem o assunto de horario, e tipo de contato
+ao invés de usar a div eu estou usando agora o fieldset, que funciona basicamente da mesma forma que a div, porém de uma forma mais semantica
+para agrupar um certo tanto de assuntos, do mesmo assunto dentro de um bloco, e ao invés da tag "p" para paragráfo, eu usei a tag legend
+que anda de mão dada com a fieldset basiamente e com isso o fieldset não abrange apenas um assunto aleatório, pois agora tem a explicação do que 
+aquele certo bloco de inputs está pedindo informação.
+
+apliquei isso a essas divs que eram apenas divs comuns, troquei para o fieldset e nos paragráfos e coloquei o legend, e coloquei o conteudo que já
+estava no paragrafo dentro do fieldset.
+
+e nas imagens de logo alura, eu adicionei o atributo alt(que significa alternative, ou alternativo) que é uma resposta alternativa caso a imagem
+não chegue a carregar, vai ser descrito um texto ao lado da imagem, justificando o que estava escrito ali dentro, o que tinha ali de tão importante.
+
+isso é otimo para pessoas com baixa acessibilidade, e com dificuldades visuais (Deficiencia visual), e isso é otimo para todos, no fim todos agradecem.
+
+Fim de aula 4 -----
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+Aula 5 --------------------------------------------------------------------------------------------------------------------------------------------
+
+CSS avançado -- 
+
+primeira aula foi bem interessante, agora eu arrumei o botão para fazer com que o botão fique com uma nova cor, tenha um font size maior um negrito
+na fonte para ficar mais destacado, retirei as bordas, e dei um arredondamento no botão em si, com isso meu botão já ficou bem mais interessante
+agora eu mudei o background-color para laranja ou seja orange, e fiz um efeito de transição do elemento, porque quando na hora eu passar o mouse
+por cima do elemento ele vai mudar automaticamente no tempo de 1s para a cor laranja escuro darkorange.
+
+e para fazer isso eu usei o "transition", ou seja transição, mudei a transição do meu item, para que ele demore 1 segundo, e que a transition seja
+feita apenas no background assim "transition: 1s background" quando eu passar o mouse por cima, ele vai mudar de cor e vai mudar o curso do mouse 
+para pointer, ou seja aquele dedinho
+
+módulo 5 - css avançado
+
+reestruturando e refazendo a página home totalmente do inicio, com o header e footer como todas as outras, 
+só que agora com mais efeitos na página toda, para isso nós fizemos com que imagem de fundo ainda tivesse 100% de
+width, armazenamos toda a página tirando o header e footer, dentro da tag main, que é o conteúdo princial, e durante
+toda essa transição nós também conectamos o css padrão e o reset css e tiramos os css antigo que tinha na primeira
+página, e com isso o main agora terá o comportamento de 940px e margin 0 auto;
+
+mas agora vamos há algumas mudanças nesse site em si né ?
+
+primeiramente nós alteramos a classe de titulo centralizado e agora é "titulo-principal", e todos que tiverem isso terão 
+o tamanho de 2em(medida em relação a fonte size da página atualmente), e também um margin: 0 0 1em, apenas para baixo, obviamente podemos 
+simplificar isso com um margin-bottom, mas sla o professor quer assim, fazer o que né ? e também um text-align center; 
+
+todos os itens que tiverem essa classe terão font-size 2em e margin-bottom de 1em em relação ao tamanho da fonte dele atualmente, 
+e para div de "principal" e "beneficios" trocamos também de div para "section", que é uma forma semantica de representar uma seção de itens
+dentro de uma página ou um bloco de determinado assunto.
+
+e também todos os p de principal e outras tag section que eu criarei terão o text-align:center;
+
+a primeira sessão a principal, terá essas configurações de font-size e margin:0 0 1em, e também, e todos os strong e em e ".principal" terão
+suas respectivas configurações padrões como "font-weight:bold" e "font-style:italic", e agora eu também colocarei uma imagem bem acima dos
+paragrafos, que se chama utensilios.jpg, e sabendo que ele vai ocupar um espaço e já que a tag "p" é um block, então eu coloco a imagem para
+ter a propriedade float:left; ou seja fique "flutuante a esquerda", ela vai passar a ficar flutuante, e vai passar para a linha de baixo
+e os itens "p", vão poder começar a ficar ao redor dela, como se a imagem não existisse ali, e fosse apenas uma margin do sistema, a imagem
+vai ocupar apenas a largura e altura do seu elemento respectivamente, porém, sempre tem um porém né ? kkkkk
+
+a propriedade float, não só mexe no item, como também nos itens abaixo dele, como o próximo h3, que tem a classe titulo-centralizado, e com isso
+ele vai meio que se inclinar para a esquerda, então no item que está sofrendo alterações claramente visiveis, nós colocamos a propriedade 
+"clear" e o lado que está sendo afetado, no caso do float:left, então clear:left; né >:)
+
+e logo depois disso eu vou colocar uma margin da direita e para baixo de 20 ou 30px, não me lembro, para afastar um poucos as palavras da imagem
+e para há area de beneficios eu vou adicionar algumas configurações, como adicionar uma div para agrupar eles dois, a lista e a imagem
+e a eles dois eu dei uma width de 640px e margin:0 auto para se alinhar totalmente ao meio, para a imagem eu dei um tamanho de 60% e para a lista
+eu dei um tamanho de 40% também, obviamente mesmo com a lista estando "inline-block" ele não vai descer, porque no editor de codigo ele considerado
+alguns espaços bem tortos, como isso :
+
+<ul class="lista-beneficios">
+                        <li class="itens">Atendimento aos clientes</li>
+                        <li class="itens">Espaço diferenciado</li>
+                        <li class="itens">Localização</li>
+                        <li class="itens">Profissionais Qualificados</li>
+                        <li class="itens">Pontualidade</li>
+                        <li class="itens">Limpeza</li>
+                    </ul>///////////////////////////////////////// isso então para modificiar temos que fazer isso:: 
+                    <img class="imagembeneficios" src="img/beneficios.jpg" />
+
+<ul class="lista-beneficios">
+                        <li class="itens">Atendimento aos clientes</li>
+                        <li class="itens">Espaço diferenciado</li>
+                        <li class="itens">Localização</li>
+                        <li class="itens">Profissionais Qualificados</li>
+                        <li class="itens">Pontualidade</li>
+                        <li class="itens">Limpeza</li>
+                    </ul><img class="imagembeneficios" src="img/beneficios.jpg" />// tirar os espaços para que ambos fiquem juntos sem problema
+                    ou então é só colocar a imagem como width:59%;
+
+logo abaixo dessa nova div criada, agora nós colocamos também um video, a partir de exportações, e como fazer a exportação de um video 
+
+e para fazer isso basta eu ir no youtube, e ir na opção de "compartilhar" no respectivo video que eu quero compartilhar, e com isso logo depois de clicar
+eu vou no botão de "incorporar", e com a incorporação basta eu procurar a tag "iframe" que ele próprio vai disponibilizar, para mim e colocar
+dentro do arquivo html abaixo da nova lista de beneficios totalmente centralizada ao meio.
+
+o video não vai vir centralizado no meio obviamente, e para isso fazemos a classe video, e com a classe video vamos colocar o iframe de video dentro
+e dentro do css, vamos cuidar da centralização do elemento, dando a classe do item basicamente, o width do video em si, e colocando um margin
+0 auto para que fique centralizado ao meio e sem problemas. dessa forma finalizamos basicamente a área de beneficios 
+
+mas antes da área de beneficios temos que colocar também a seção de mapas
+
+ou seja a localização da barbearia alura respectivamente, e para isso basta criarmos uma section com a classe "mapa", e dentro dela colocamos
+um h3 com a "localização" escrita, e abaixo um paragrafo com "Nosso estabelecimento fica localizado no coração da cidade"
+
+e abaixo um mapa com as coordenadas e local certo, e como fazemos para fazer isso ?
+
+basta usarmos o google maps: acesse o site do google maps, e procure o lugar que você quer ver respectivamente, com isso você vai entender
+quando finalmente achar o local que deseja compartilhar a localização, você vai fazer o seguinte, basta ir no menu, aqueles "3 traços" e achar
+o botão de "compartilhar ou incorporar mapa", e ir na aba de "incorporar um mapa" logo em seguida.
+
+com isso eles vão lhe disponibilizar outra tag "iframe" com tudo que você precisa, e basta apenas colocar dentro do seu site a localização que 
+acabou de obter, e com isso coloque no html e o site vai reconhecer, e cuidando da largura e tals, você vai precisar colocar no width
+que já vem no item o width como 100%, já que os elementos da pagina tem 940px, como foi definido no main logo acima, e com isso o site vai ter
+a largura como 100% e o height você coloca como 350px para que ele fique com um tamanho aceitavel. depois disso basicamente basta também
+colocar um padding interno na seção mapa de top e bottom de 3em, para que ganhe um espaço a mais, e no paragrafo de localização
+você centraliza ao meio com text-align:center;
+
+primeiramente eu vou tirar a configuração do "main" vamos tirar o 940px e margin:0 auto; e eu sei que isso vai quebrar o site um pouco
+inclusive a página de contato, já estou ciente dessa proeza.
+
+com isso para que o item continue centralizado ao meio, colorarei o width como 940px e margin como 0 e auto para centralizar ao meio e ter uma
+largura de 940px, em todos os itens que precisarem disso basicamente, no caso a aba de principal né ?
+
+já na área de mapa eu vou fazer uma div para armazenar ele e vou dar uma configuração própria de width com 940px e margin:0 auto, para centralizar ao meio
+o mapa e continuar com a configuração de 100% de largura respectivamente. 
+
+a area de beneficios e o video, eu não vou precisar basicamente pois eles já vão ter a configuração própria basicamente.
+
+
+
+aula 3 ----------------- aplicando gradientes de css avançado
+
+e para aplicar o gradiente, basta eu colocar o background da div "principal" como #FEFEFE e na área de "beneficios" já que está sem a margin de 940px
+agora eu coloco um background de gray, ou #888888 e com isso teremos duas divs com cores diferentes, mas a section de mapa é que vai nos ajudar
+
+agora eu vou colcoar um background com linear gradient nela, fazendo a transição entre #FEFEFE e #888888, e no fim vamos ter um efeito
+de transição de cores basicamente, entre um bloco acima que é branco e o ultimo que é cinza, e o do meio vai ter a configuração de linear-gradient
+
+-----------------------pseudo-classes:
+Logo após tudo isso eu aprendi sobre algumas pseudo-classes entre elas as mais comuns que são o :hover, :active, :visited e outras por ai, sendo
+o hover quando o mouse passar por cima do elemento, o active quando o elemento chegar a ser clicado, e o visited, quando o link já estiver sido
+visitado pela pessoa anteriormente. 
+
+Só que nessa aula não foi só entendimento de algumas pseudo classes comuns, eu também aprendi sobre os "childs", ou seja algumas outras formas
+de selecionar um item a partir da sua posição ou parentesco com o elemento, eu aprendi sobre os "child" entre eles os:
+* nth-child, *first-child e *last-child
+
+o nth-child seleciona basicamente o filho que você quiser, e diferente do javascript, esse daqui pode ser em ordem númerica sim, do 1 até onde for
+, se eu quiser selecionar o 3 item de um tanto de classes, basta eu colocar .classe("do exemplo"):nth-child(3){background-color:blue;}
+
+já o first-child e last-child já diz o seu significado por si só, o first-child seleciona basicamente o primeiro item, e o last-child seleciona
+o ultimo item daqueles que estão sendo analisados.
+e com isso foi ele que eu escolhi para modificar a minha lista de beneficios do site, na página home.
+
+adicionei mais dois campos de lista entre eles: <li>Pontualidade</li> e <li>Limpeza</li>, e no primeiro item da lista, ou seja no first-child
+eu apliquei a configuração de negrito, e só ele vai ficar em negrito.
+
+------------------------pseudo-elementos:
+Nessa aula de pseudo elementos eu aprendi bastante, dessa vez, eu aprendi como selecionar determinados elementos na página através dos pseudo
+seletores de elementos, e são uns bem interessantes, entre eles o: "first-letter", "first-line", e também os itens que vou usar nessa aula que são
+"before" e "after". bem interessantes.
+
+o first-letter, seleciona basicamente a primeira linha de um determinado elemento, tipo seleciona um paragrafo, na primeira letra dele fazer alguma
+modificação dessa forma : .paragraph:first-letter{font-size:50px;}// apenas a primeira letra teria essa font-size gigante.
+
+o first-line diferente da first-letter, cuida da linha inteira, porém é uma linha somente, e se você acha que vai ser a mesma linha para o resto 
+do site, está enganado, essa linha vai se adptar a todos os sites e tamanhos, ele basicamente só vai pegar a primeira linha mesmo, se no pc
+a primeira linha vai até o fim da tela e o mobile a primeira linha é bem pequena, vai continuar com a mesma configuração, porém apenas para a 
+primeira linha.
+
+
+e agora os mais aguardados e são o grande assunto dessa aula, "before" e "after"
+
+o pseudo elemento before, é para que você adicione algo no seu elemento, antes da inicialização dele, já o after é depois da inicialização dele
+e não se engane nenhum desses dois elementos podem ser clicados, afinal, eles vem do próprio css, e são apenas pseudo-elementos, e por obrigação
+eles precisam ter um "content", ou sejá o conteudo que vai ser exibido, ao lado do outro, ou esquerdo ou direito.
+
+se eu colocar .itens:before{
+    content:"["
+}// sempre na frente dos itens da lista irá ter uma abertura de colchete
+
+agora se for do lado contrario ou seja no after que é depois da finalização do elemento.
+dessa forma :
+
+.itens:after{
+    content:"]"
+}
+
+posso até fazer umas bordinhas, e fingir que isso já é natural do próprio elemento tipo fazer dessa forma, usar um content, e também camuflar o 
+próprio conteudo dentro da borda arredondada 
+
+.itens:before{
+    content:"[";
+    background-color:blue;
+    border-top-left-radius:50%;
+    border-bottom-left-radius:50%;
+    color:blue;
+}
+
+e para essa aula eu usei o "before", para adicionar umas estrelas que não vão poder serem selecionadas com o mouse, a partir de uma aliança
+de css com uni-code, eu peguei umas estrelas de uni-code dentro do site de unicode e coloquei dentro do before de todos os itens lista
+dessa forma
+.itens:before{
+    content:"★"
+}
+
+selecionando todos os inicios dos list itens e colocando uma estrela bem na frente do item.
+
+//seletores avançados e calculos com css 
+
+a partir daqui já é uma próxima aula, e nessa aula eu pude aprofundar ainda mais os meus conhecimentos em seletores de css, e como selecionar itens
+de outra forma, tipo selecionar pelo filho direto, ou apenas unico item após outro, ou todos os outro de um tipo após tal item, ou ignorar um item
+de certa estilização por ter tal coisa dentro de si. 
+
+dessa forma eu vou explicar agora, temos esses tipos de seletores avançados no css. [">", "+", "~", ":not()"]
+
+o ">" significa basicamente o filho direto de algum item, mas o que quer dizer o filho direto ? tem que estar apenas dentro do item idenpendente
+da sua posição ? sim e não, porque ele tem que estar dentro do item, porém não em qualquer posição, tem que ser um filho direto, e não um neto.
+
+veja um exemplo certo e errado, quero selecionar o "h1" dentro da div caixa, só que eu quero o filho direto de caixa
+
+<div class="caixa">
+    <h1>Olá</h1>
+    <div>
+        <h1>Olá</h1>
+    </div>
+</div>
+
+qual você acha que vai ser selecionado ? os dois ? não, somente o primeiro, porque o filho direto é o filho seco, o filho que já vai estar na caixa
+e não dentro de outra caixa, e não é porque é o filho direto que tem que estar na primeira linha, pode ser também se ele estiver na ultima
+contando que esteja armazenado diretamente no pai, vai ser um filho direto.
+tipo isso
+<div class="caixa">
+    <div>
+        <h1>Olás</h1>
+    </div>
+    <h1>Olá</h1>
+</div>
+ 
+ e como faço para selecionar :? assim  : .caixa > h1{
+     font-size:70px;
+     font-weight:bold;
+     color:red;
+ }apenas o h1 filho direto receberá essa propriedade, no caso o ultimo.
+
+já o "+", quer dizer após, apenas após tal item receberá tal propriedade, como assim não entendi. calma vou lhe explicar, ("explicação mental" .-.)
+tipo eu quero selecionar apenas o paragrafo que vem após a imagem com a classe image, se não existi, está tudo bem nada será aplicado, vou mostrar
+
+.image + p{
+    font-size:55px;
+}
+
+<img class="image" src="https://www.google.com.br/google.jpg" alt="">
+<h1>Olá</h1>
+<p>Sou do exemplo</p>
+
+// acha que esse exemplo acima vai dar certo ? errado, porque ele está após outro item, e não depois explicitamente da imagem, agora se fosse
+assim:
+
+<img class="image" src="https://www.google.com.br/google.jpg" alt="">
+<p>Sou do exemplo</p>
+<h1>Olá</h1>
+
+// dessa forma daria tudo certo, afinal eu quero apenas o "p" que esteja depois explicitamente depois de ".image"
+
+vamos para o "~" o til, significa todos os itens de uma mesma linhagem, que estão, após algum item que eu selecionei ou especifiquei, como assim?
+tipo isso, quero pegar todos os "li" que estiverem após o heading-maluco. assim :
+
+.heading-maluco ~ li{
+    font-size:20px;
+    color:red;
+}
+
+<h1 class="heading-maluco">Olá sou eu novamente</h1>
+<ul>
+    <li>1</li>
+    <li>2</li>
+</ul>
+<ul>
+    <li>3</li>
+    <li>4</li>
+</ul>
+
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+
+apenas os 4 li, finais receberão essas própriedades, afinal, somente eles estão após o h1, já os li que estão dentro dos ul, é como eu disse
+estão dentro de ul, e não são, após o h1, mas sim após porem dentro de outro item. então somente os "li" que estiverem após o heading maluco
+receberão essa propriedade, e com isso acho que já deu para entender.
+a mais se tivesse uma barreira impedindo eles de se verem, funcionaria da mesma forma ? sim correto assim :
+
+<h1 class="heading-maluco">Olá sou eu novamente</h1>
+<ul>
+    <li>1</li>
+    <li>2</li>
+</ul>
+<ul>
+    <li>3</li>
+    <li>4</li>
+</ul>
+
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+
+<h2>Olá sou eu novamente</h2>
+
+<li>1</li>
+<li>2</li>
+<li>3</li>
+<li>4</li>
+
+
+agora vamos para o final, o famoso excluido, ou seja o ":not()" todos menos ele. vamos entender melhor do que se trata essa analogia
+
+digamos que eu queira selecionar todos os "li", menos o li que tem a idade 18, vamos entender agora, não se trata de javascript fique tranquilo
+
+li:not(.dezoito){
+    font-size:25px;
+}
+
+<li>1</li>
+<li>2</li>
+<li class="dezoito">3</li>
+<li>4</li>
+<li>5</li>
+
+desa forma, todos os li terão a font-size alterada, menos o que possui a classe 18. entendeu ? bueno vamos para a próxima.
+
+agora vamos para a sessão de calculos com css3 -------- calc 
+no css 3 nós conseguimos a propriedade de calc, afinal nem todas as vezes, nós saberemos como irá funcionar o comportamento de um item e não
+sabemos qual é a altura certa ou largura correta, então para isso podemos aplicar o calculo, digamos que eu quero selecionar a tela toda
+na largura, porém eu quero que ele corte 100px dessa largura, idependente do tamanho original da tela, vamos lá
+
+.caixa{
+    width:calc(100% - 100px);
+    // dessa forma eu faço 100% da tela, porém ele sempre vai cortar 100px; como eu pedi ele vai preencher 100% da tela e vai retirar 100px da ponta
+    como você pediu, se quiser entender melhor adicione um background ao item, e vai perceber uma grande mudança e muita diferença.
+}
+
+o calc é uma propriedade muito interessante do css, porém não é tão usada totalmente todos os dias, mas é bem precisa e é importante saber
+usar e entende-la bem.
+
+--------------------------------------------- Opacidade e Sombra
+
+---------opacidade(opacity)
+para essa aula de opacidade, eu aprendi bastante como mexer na opacidade de um certo item, afinal com opacidade eu posso até deixar o item
+bem transparente e ver o que tem atrás dele como um background-image. quem sabe.
+com essa propriedade eu posso mexer no nivel de cor de um item, quanto mais brilhoso mais o item poderá ser visto e quando menos o item começará
+a desaparecer por si só. interessante né ?
+
+e como eu faço para fazer isso ? com a propriedade "opacity", do css, que recebe valores de 0 até 1, pode ser 0.1, 0.2...... por ai.
+sendo 1 para 100% e 0 para 0%.
+
+se quiser pode testar isso em um item, quando menor o nivel de opacidade, mas o item vai ter ausencia da luz, e vai desaparecendo consequentemente.
+
+e com isso é o conhecimento que eu vou adicionar dentro do meu elemento "imagembeneficios", vou adicionar um hover para ele, para que quando
+o mouse seja passado em cima dessa imagem, ela tenha uma opacidade de 30% e fique bem dificil de ser vista. e para que o efeito não fique
+tão bruto e grosso, eu também adicionei um transition de 1s para todos os itens relacionados aquela imagem.
+
+sabia que também pode fazer com que a cor de algum elemento fique com opacidade original ou meio desaparecida ? ou seja o nivel de transparencia
+das cores no css, também é possivel mexer nisso no css 3, a partir do RGBA, ou seja red green blue alpha, é a mesma coisa do rgb, porém com 
+um nivel adicional no final, e esse nivel no final é o nivel de opacidade do elemento, e com isso nós decidimos como ele vai se comportar
+consequentemente.
+
+dessa forma, imagine que você quer que as suas tags "p", continuem com a cor preta, porém meio apagada, você pode fazer isso :
+p{color:rgba(000,000,000, 0.7)} apenas 70% do preto aparecerá normalmente, ou seja um nivel de transparencia de 30%
+
+
+-------- Sombra(shadow)
+Sabia que dá para mexer na sombra de um elemento no css ? não mexer, mas sim adicionar uma sombra e deixar aquele elemento cada vez mais 
+realista, como você nunca imaginou, e como eu posso fazer isso ? bom temos duas propriedades, e vamos usar uma agora no seu conhecimento da aula
+que se chama "box-shadow"
+
+box-shadow se trata da sombra de um bloco, afinal box(caixa), suponhamos que temos uma imagem, e queremos colocar uma sobra ao redor dessa imagem
+com isso nós podemos fazer o box-shadow, afinal esse é o papel dele no fim do dia. esse propriedade aceita no minimo 3 argumentos sendo eles
+o nivel do eixoX o nivel do eixoY, e a cor do item respectivamente. digamos que eu quero uma sombra que começe do eixoX em 0, e do eixoY em 5px 
+e a cor preta, ficaria assim box-shadow:0px 5px #000; uma sombra sairia dessa forma
+
+porém sairia bem sólida e sem muita emoção na sua visualização, e é ai que entre um quarto componente, que se trata do nivel de 
+esfumaçamento das sombra que vai cuidar de deixar ela mais realista. dessa forma eu posso fazer uma sombra da mesma forma que fiz anteriormente
+porém com uma sombra esfumaçada em pixels ou o que eu preferir utilizar.
+assim : box-shadow:0px 5px 5px #000; uma sombra espaçada em 5px de nivel de esfumaçamento.
+também temos um quinto nivel que é basicamente o tamanho em escala da sombra, além do tamanho original do item, tipo meu item original é imagem
+quantos pixels a mais eu quero depois da imagem ? quero 20 px, então eu coloco uma sombra do tamanho original do bloco, porém com um acressimo
+de 20px para todos os lados, e como eu uso isso ? assim : box-shadow:0px 5px 5px 20px #000; 
+
+sabia que você pode adicionar mais de uma sombra ? basta adicionar uma virgula, e colocar a proxima sombra com as especificações que você quer
+box-shadow:0px 5px 5px 20px #000, -2px -5px 5px 20px #00f
+
+e com isso eu vou adicionar uma sombra ao meu bloco de imagem beneficios, uma sombra após a imagem, para dar uma impressão de que o bloco de imagem
+está voando sobre a página.
+
+
+para fazer uma sombra interna dentro de algum bloco você pode usar o "inset" dentro do box-shadow assim 
+box-shadow:inset 0px 0px 30px #000; e a regra de uso é a mesma, 
+
+text-shadow, funciona da mesma forma, eixoX, eixoY, nivel de esfumaçamento, espaçamento e cor.
+
+
+-------------- aula final Responsividade
+
+Nessa aula eu aprendi o uso da tag <meta name="viewport" content="width=device-width">
+e adicionei essa tag a minha página bem dentro da tag head, ou seja o local para adicionar as configurações do site em outras palavras.
+com isso o site quebrou totalmente no celular, ou seja no celular tudo ficou totalmente ruim e bem quebrado. kkkkk e ai entra o assunto
+maior de responsividade.
+
+para que ele pudesse se adaptar a dispositivos moveis a partir de uma largura especifica eu adicionei o "media" o media query Serve para fazermos
+mudanças, modificações de acordo com um certo nivel de media, ou seja o certo nivel de tamanho de tela. 
+
+e para isso eu adicionei um media para a tela(screen), e partir de 480px, ele vai aplicar algumas configurações e mudar o tamanho da tela
+proprositalmente para se adptar a um dispositivo movel, que aguarda o uso do site no celular.
+
+adicionei algumas mudaças no .principal, .mapa-conteudo, .caixa, .video-area, .beneficios-area uma largura de auto, ou seja para adaptar a largura
+de acordo com o tamanho do disposivito, mudei o comportamento do video para ocupar 100% da largura, para poder se adaptar ao tamanho do bloco também
+porque antes ele estava com uma largura fixa, 
+
+modifiquei o comportamento dos itens da lista de beneficios, para um ficar abaixo do outro, fiz um text-align:center, para os itens da lista ficarem
+centralizado ao centro, retirei o position:absolute da minha barra de navegação no inicio, e coloquei como static, e dei um text-align;center também
+
+e modifiquei outros afins, inclusive também fiz a responsividade das outras páginas, dentro do meu projeto.
+
+e assim eu finalizei esse 4 modulo de avançar no css, e assim completar o site completamente.
+
+
+

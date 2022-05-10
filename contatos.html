@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head lang="pt-br">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="style/reset.css">
+        <link rel="stylesheet" href="style/style.css">
+        <title>Contato - Barbearia Alura</title>
+    </head>
+    <body>
+        <header>
+            <div class="caixa">
+                <h1>
+                    <img src="img/logo.png" alt="logo da barbearia alura"/>
+                </h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="produtos.html">PRODUTOS</a></li>
+                        <li><a href="contatos.html">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="contact">
+            <form>
+                <label for="nameSurname">Nome e Sobrenome</label>
+                <input type="text" id="nameSurname" class="input-padrao" required placeholder="Nome + sobrenome(apenas)"/>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input-padrao" required placeholder="seuEmail@Dominio.com"/>
+
+                <label for="phoneNumber">Telefone</label>
+                <input type="tel" id="phoneNumber" class="input-padrao" required placeholder="(dd) NNNNN NNNN"/>
+
+                <label for="mensagem">Escreva sua mensagem aqui:</label>
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+                <fieldset>
+                    <legend>Como prefere que seja o nosso contato ?</legend>
+
+                    <label for="radio-email">
+                        <input type="radio" name="contato" id="radio-email"/> 
+                        Email
+                    </label>
+                    
+                    
+                    <label for="radio-ligacao">
+                        <input type="radio" name="contato" id="radio-ligacao"/>
+                        Ligação
+                    </label>
+                    
+                    
+                    <label for="radio-whatsapp">
+                        <input type="radio" name="contato" id="radio-whatsapp" checked/>
+                        Whatsapp
+                    </label>
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend>Em que horário deseja ser atendido ?</legend>
+                    <select>
+                        <option value="morning">Manhã</option>
+                        <option value="afternoon">Tarde</option>
+                        <option value="night">Noite</option>
+                    </select>
+                </fieldset>
+
+                <label class="checkbox">
+                    <input type="checkbox" checked/>
+                    Gostaria de Receber nossas novidades por email ?
+                </label>
+                
+                <input type="submit" class="botao-formulario" value="Enviar Formulário"/>
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                </tbody>
+                
+            </table>
+        </main>
+        <footer>
+            <img src="img/logo-branco.png" alt="logo da barbearia alura"/>
+            <p class="copyright">&copy; Copyright Barbearia alura - 2019</p>
+        </footer>
+    </body>
+</html>
